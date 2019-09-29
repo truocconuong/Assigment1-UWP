@@ -85,5 +85,10 @@
       <RootProperty Name="Header" />
     </RootType>
     <RootType FullName="Assigment.Pages.Register" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Assigment.Pages.UploadFile" />
   </Roots.RootTypes>
 </Roots>

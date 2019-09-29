@@ -22,7 +22,7 @@
                                     </Ellipse.Fill>
                                 </Ellipse>
                                 <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="12,0,0,0">
-                                    <TextBlock Text="{Binding name}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
+                                    <TextBlock  Text="{Binding name}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
                                     <TextBlock Text="{Binding singer}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
                                 </StackPanel>
                                 <Button x:ConnectionId='4' Tag="{Binding link}"                   >

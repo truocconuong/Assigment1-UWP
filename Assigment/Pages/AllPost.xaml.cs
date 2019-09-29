@@ -34,7 +34,7 @@ namespace Assigment.Pages
 
         public AllPost()
         {
-
+            
             this.InitializeComponent();
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             Windows.Storage.StorageFile sampleFile = storageFolder.GetFileAsync("sample.txt").GetAwaiter().GetResult();

@@ -46,6 +46,9 @@ namespace Assigment
                     case "allplaylist":
                         this.MainContent.Navigate(typeof(AllPost));
                         break;
+                    case "upload":
+                        this.MainContent.Navigate(typeof(UploadFile));
+                        break;
                 }
             };
         }

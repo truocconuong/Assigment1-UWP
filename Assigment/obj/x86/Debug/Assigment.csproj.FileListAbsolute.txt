@@ -64,3 +64,8 @@ C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\AllPost.g.i.
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\AllPost.g.cs
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\AllPost.xaml
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\AllPost.xbf
+C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\UploadFile.xbf
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.g.i.cs
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.g.cs
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.xaml
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.xbf

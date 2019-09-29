@@ -88,6 +88,9 @@
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\Register.xbf">
       <PackagePath>Pages\Register.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\UploadFile.xbf">
+      <PackagePath>Pages\UploadFile.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

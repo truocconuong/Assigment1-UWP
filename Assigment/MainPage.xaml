@@ -19,6 +19,7 @@
                 <HyperlinkButton Tag="Login" Click="ButtonBase_OnClick">Login</HyperlinkButton>
                 <HyperlinkButton Tag="Information" Click="ButtonBase_OnClick">My Information</HyperlinkButton>
                 <HyperlinkButton Tag="allplaylist" Click="ButtonBase_OnClick">Play list</HyperlinkButton>
+                <HyperlinkButton Tag="upload" Click="ButtonBase_OnClick">Upload File</HyperlinkButton>
             </StackPanel>
         </SplitView.Pane>
         <SplitView.Content>
