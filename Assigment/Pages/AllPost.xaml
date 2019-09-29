@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="Assigment.Pages.AllPost"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assigment.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <ListView x:Name="ls1" Header="All song">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ScrollViewer>
+                            <StackPanel Orientation="Horizontal" Height="64">
+                                <Ellipse Height="48" Width="48" VerticalAlignment="Center">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding thumbnail}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="12,0,0,0">
+                                    <TextBlock Text="{Binding name}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
+                                    <TextBlock Text="{Binding singer}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
+                                </StackPanel>
+                                <Button Tag="{Binding link}" Click="Start_Song">
+                                    <StackPanel>
+                                        <SymbolIcon Symbol="Play"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button  Click="Stop_Song">
+                                    <StackPanel>
+                                        <SymbolIcon Symbol="Stop"/>
+                                    </StackPanel>
+                                </Button>
+
+                            </StackPanel>
+                        </ScrollViewer>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>
