@@ -69,3 +69,8 @@ C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.g
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.g.cs
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.xaml
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\UploadFile.xbf
+C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\PostSong.xbf
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\PostSong.g.i.cs
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\PostSong.g.cs
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\PostSong.xaml
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\PostSong.xbf

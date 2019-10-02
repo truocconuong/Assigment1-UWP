@@ -20,10 +20,11 @@
                 <HyperlinkButton x:ConnectionId='6' Tag="Information"                           >My Information</HyperlinkButton>
                 <HyperlinkButton x:ConnectionId='7' Tag="allplaylist"                           >Play list</HyperlinkButton>
                 <HyperlinkButton x:ConnectionId='8' Tag="upload"                           >Upload File</HyperlinkButton>
+                <HyperlinkButton x:ConnectionId='9' Tag="post"                           >PostSong</HyperlinkButton>
             </StackPanel>
         </SplitView.Pane>
         <SplitView.Content>
-            <Frame x:ConnectionId='9' x:Name="MainContent"></Frame>
+            <Frame x:ConnectionId='10' x:Name="MainContent"></Frame>
         </SplitView.Content>
     </SplitView>
 </Page>

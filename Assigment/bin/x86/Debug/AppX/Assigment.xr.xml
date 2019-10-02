@@ -81,6 +81,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox" />
     <RootType FullName="Assigment.Pages.Login" />
+    <RootType FullName="Assigment.Pages.PostSong" />
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Header" />
     </RootType>

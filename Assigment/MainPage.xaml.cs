@@ -49,6 +49,9 @@ namespace Assigment
                     case "upload":
                         this.MainContent.Navigate(typeof(UploadFile));
                         break;
+                    case "post":
+                        this.MainContent.Navigate(typeof(PostSong));
+                        break;
                 }
             };
         }

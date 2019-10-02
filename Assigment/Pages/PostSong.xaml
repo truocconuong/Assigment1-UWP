@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Assigment.Pages.PostSong"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assigment.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <ScrollViewer Margin="20">
+            <StackPanel Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+            <TextBlock>name</TextBlock>
+            <TextBox x:Name="name"></TextBox>
+
+            <TextBlock>description</TextBlock>
+            <TextBox x:Name="description"></TextBox>
+
+            <TextBlock>singer</TextBlock>
+            <TextBox x:Name="singer"></TextBox>
+                
+            <TextBlock>author</TextBlock>
+            <TextBox x:Name="author"></TextBox>
+                
+            <TextBlock>thumbnail</TextBlock>
+            <TextBox x:Name="thumbnail"></TextBox>
+            <TextBlock>link</TextBlock>
+            <TextBox x:Name="link"></TextBox>
+        
+            <Button Click="ButtonBase_OnClick">Register</Button>
+            </StackPanel>
+        </ScrollViewer>
+</Page>
