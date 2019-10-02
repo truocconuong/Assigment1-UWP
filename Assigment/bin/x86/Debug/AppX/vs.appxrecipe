@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C8B7C2AF7D81ADEEA1572203F7A6323D69DB3558A4A5EF06BD6B5A7D4306039A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9C71DA07B7577DC436BF663F83612C0966C9407E54A30DDEEEF9E752878075CD</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f0fe5d31-41a6-4311-8773-2d138bf00299_1.0.0.0_x86__6s8k6fnh1p36t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f0fe5d31-41a6-4311-8773-2d138bf00299_6s8k6fnh1p36t!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f0fe5d31-41a6-4311-8773-2d138bf00299</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-02T04:48:35.132</Modified>
+      <Modified>2019-10-02T05:46:07.702</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Assigment.exe">
       <PackagePath>entrypoint\Assigment.exe</PackagePath>
-      <Modified>2019-10-02T04:48:34.643</Modified>
+      <Modified>2019-10-02T05:46:06.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\.nuget\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -45,6 +45,26 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-03-12T15:22:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\.nuget\packages\win2d.uwp\1.19.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2016-08-09T01:14:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\.nuget\packages\winux.common\2.4.17005.1\lib\portable46-net451+win81\WinUX.Common.dll">
+      <PackagePath>WinUX.Common.dll</PackagePath>
+      <Modified>2017-01-05T07:41:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\.nuget\packages\winux.uwp\2.4.17005.1\lib\.NETCore50\WinUX.UWP.dll">
+      <PackagePath>WinUX.UWP.dll</PackagePath>
+      <Modified>2017-01-05T07:41:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\.nuget\packages\writeablebitmapex\1.5.0\lib\NetCore45\WriteableBitmapEx.WinRT.dll">
+      <PackagePath>WriteableBitmapEx.WinRT.dll</PackagePath>
+      <Modified>2015-03-31T09:28:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\.nuget\packages\win2d.uwp\1.19.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2016-08-09T01:14:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -94,35 +114,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.012</Modified>
+      <Modified>2019-10-02T05:46:06.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.012</Modified>
+      <Modified>2019-10-02T05:46:06.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\AllPost.xbf">
       <PackagePath>Pages\AllPost.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.013</Modified>
+      <Modified>2019-10-02T05:46:06.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\Information.xbf">
       <PackagePath>Pages\Information.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.013</Modified>
+      <Modified>2019-10-02T05:46:06.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\Login.xbf">
       <PackagePath>Pages\Login.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.013</Modified>
+      <Modified>2019-10-02T05:46:06.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\PostSong.xbf">
       <PackagePath>Pages\PostSong.xbf</PackagePath>
-      <Modified>2019-10-02T04:48:34.292</Modified>
+      <Modified>2019-10-02T05:46:06.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\Register.xbf">
       <PackagePath>Pages\Register.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.014</Modified>
+      <Modified>2019-10-02T05:46:06.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\UploadFile.xbf">
       <PackagePath>Pages\UploadFile.xbf</PackagePath>
-      <Modified>2019-10-02T04:45:09.014</Modified>
+      <Modified>2019-10-02T05:46:06.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -130,11 +150,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-10-02T04:37:38.397</Modified>
+      <Modified>2019-10-02T05:04:12.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Core\Assigment.exe">
       <PackagePath>Assigment.exe</PackagePath>
-      <Modified>2019-10-02T04:48:35.123</Modified>
+      <Modified>2019-10-02T05:46:07.691</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

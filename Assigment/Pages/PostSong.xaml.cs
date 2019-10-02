@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -35,21 +36,54 @@ namespace Assigment.Pages
         }
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            var song = new Song
+            if(this.name.Text == "" && this.description.Text == "" && this.thumbnail.Text == "" && this.link.Text == "")
             {
-                name = this.name.Text,
-                description = this.description.Text,
-                singer = this.singer.Text,
-                author = this.author.Text,
-                thumbnail = this.thumbnail.Text,
-                link = this.link.Text
-            };
-            var httpClient = new HttpClient();
-            HttpContent content = new StringContent(JsonConvert.SerializeObject(song), Encoding.UTF8,
-                "application/json");
-            Task<HttpResponseMessage> httpRequestMessage = httpClient.PostAsync(ApiUrl, content);
-            String responseContent = httpRequestMessage.Result.Content.ReadAsStringAsync().Result;
-            Debug.WriteLine("Response: " + responseContent);
+                this.checkErrorAll.Text = "Du lieu khong duoc bo trong";
+            }
+            else if(this.name.Text == "")
+            {
+                this.checkErrorName.Text = "Ten khong duoc bo trong";
+            }
+            else if (this.name.Text.Length>=50)
+            {
+                this.checkErrorName.Text = "Ten khong duoc dai qua 50 ki tu";
+            }
+            else if (Regex.IsMatch(this.link.Text, ".mp3$") == false)
+            {
+                this.checkerrorMp3.Text = "Link khong dung dinh dang";
+            }
+            else if (this.thumbnail.Text =="")
+            {
+                Debug.WriteLine("Thumnail khong duoc de trong");
+            }
+            else if (this.link.Text == "")
+            {
+                this.checkerrorMp3.Text = "Link khong duoc de trong";
+            }
+
+            else
+            {
+                this.checkerrorMp3.Text = "";
+                this.checkErrorName.Text = "";
+                this.checkErrorAll.Text = "";
+                var song = new Song
+                {
+                    name = this.name.Text,
+                    description = this.description.Text,
+                    singer = this.singer.Text,
+                    author = this.author.Text,
+                    thumbnail = this.thumbnail.Text,
+                    link = this.link.Text
+                };
+                var httpClient = new HttpClient();
+                HttpContent content = new StringContent(JsonConvert.SerializeObject(song), Encoding.UTF8,
+                    "application/json");
+                Task<HttpResponseMessage> httpRequestMessage = httpClient.PostAsync(ApiUrl, content);
+                String responseContent = httpRequestMessage.Result.Content.ReadAsStringAsync().Result;
+                Debug.WriteLine("Response: " + responseContent);
+            }
+
+
         }
     }
 }

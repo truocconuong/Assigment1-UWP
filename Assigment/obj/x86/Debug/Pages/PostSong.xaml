@@ -5,6 +5,8 @@
     xmlns:local="using:Assigment.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rules="using:WinUX.Data.Validation.Rules"
+    xmlns:validation="using:WinUX.Data.Validation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -13,23 +15,25 @@
 
             <TextBlock>name</TextBlock>
             <TextBox x:ConnectionId='2' x:Name="name"></TextBox>
-
+            <TextBlock x:ConnectionId='3' x:Name="checkErrorName"></TextBlock>
             <TextBlock>description</TextBlock>
-            <TextBox x:ConnectionId='3' x:Name="description"></TextBox>
-
+            <TextBox x:ConnectionId='4' x:Name="description"></TextBox>
             <TextBlock>singer</TextBlock>
-            <TextBox x:ConnectionId='4' x:Name="singer"></TextBox>
+            <TextBox x:ConnectionId='5' x:Name="singer"></TextBox>
                 
             <TextBlock>author</TextBlock>
-            <TextBox x:ConnectionId='5' x:Name="author"></TextBox>
+            <TextBox x:ConnectionId='6' x:Name="author"></TextBox>
                 
             <TextBlock>thumbnail</TextBlock>
-            <TextBox x:ConnectionId='6' x:Name="thumbnail"></TextBox>
+            <TextBox x:ConnectionId='7' x:Name="thumbnail"></TextBox>
+            <TextBlock x:ConnectionId='8' x:Name="checkErrorThumbnail"></TextBlock>
+                
             <TextBlock>link</TextBlock>
-            <TextBox x:ConnectionId='7' x:Name="link"></TextBox>
-        
-            <Button x:ConnectionId='8'                           >Register</Button>
-            </StackPanel>
+            <TextBox x:ConnectionId='9' x:Name="link"></TextBox>
+            <TextBlock x:ConnectionId='10' x:Name="checkerrorMp3"></TextBlock>
+            <Button x:ConnectionId='11'                           >Register</Button>
+            <TextBlock x:ConnectionId='12' x:Name="checkErrorAll"></TextBlock>
+        </StackPanel>
         </ScrollViewer>
 </Page>
 

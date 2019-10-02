@@ -5,6 +5,8 @@
     xmlns:local="using:Assigment.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rules="using:WinUX.Data.Validation.Rules"
+    xmlns:validation="using:WinUX.Data.Validation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -13,10 +15,9 @@
 
             <TextBlock>name</TextBlock>
             <TextBox x:Name="name"></TextBox>
-
+            <TextBlock x:Name="checkErrorName"></TextBlock>
             <TextBlock>description</TextBlock>
             <TextBox x:Name="description"></TextBox>
-
             <TextBlock>singer</TextBlock>
             <TextBox x:Name="singer"></TextBox>
                 
@@ -25,10 +26,13 @@
                 
             <TextBlock>thumbnail</TextBlock>
             <TextBox x:Name="thumbnail"></TextBox>
+            <TextBlock x:Name="checkErrorThumbnail"></TextBlock>
+                
             <TextBlock>link</TextBlock>
             <TextBox x:Name="link"></TextBox>
-        
+            <TextBlock x:Name="checkerrorMp3"></TextBlock>
             <Button Click="ButtonBase_OnClick">Register</Button>
-            </StackPanel>
+            <TextBlock x:Name="checkErrorAll"></TextBlock>
+        </StackPanel>
         </ScrollViewer>
 </Page>
