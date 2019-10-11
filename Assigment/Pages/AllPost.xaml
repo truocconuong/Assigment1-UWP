@@ -9,38 +9,39 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <ListView x:Name="ls1" Header="All song">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-
-                        <ScrollViewer>
-                            <StackPanel Orientation="Horizontal" Height="64">
-                                <Ellipse Height="48" Width="48" VerticalAlignment="Center">
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="{Binding thumbnail}"/>
-                                    </Ellipse.Fill>
-                                </Ellipse>
-                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="12,0,0,0">
-                                    <TextBlock  Text="{Binding name}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
-                                    <TextBlock Text="{Binding singer}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
+        <ScrollViewer>
+            <StackPanel>
+                <ListView x:Name="ls1" Header="All song" SelectionChanged="clickListview">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ScrollViewer>
+                                <StackPanel Orientation="Horizontal" Height="64">
+                                    <Ellipse Height="48" Width="48" VerticalAlignment="Center">
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="{Binding thumbnail}"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                    <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="12,0,0,0">
+                                        <TextBlock  Text="{Binding name}"  Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" />
+                                        <TextBlock Text="{Binding singer}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}"/>
+                                    </StackPanel>
+                                    <Button Tag="{Binding link}" Click="Start_Song">
+                                        <StackPanel>
+                                            <SymbolIcon Symbol="Play"/>
+                                        </StackPanel>
+                                    </Button>
+                                    <Button  Click="Stop_Song">
+                                        <StackPanel>
+                                            <SymbolIcon Symbol="Stop"/>
+                                        </StackPanel>
+                                    </Button>
                                 </StackPanel>
-                                <Button Tag="{Binding link}" Click="Start_Song">
-                                    <StackPanel>
-                                        <SymbolIcon Symbol="Play"/>
-                                    </StackPanel>
-                                </Button>
-                                <Button  Click="Stop_Song">
-                                    <StackPanel>
-                                        <SymbolIcon Symbol="Stop"/>
-                                    </StackPanel>
-                                </Button>
-
-                            </StackPanel>
-                        </ScrollViewer>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
+                            </ScrollViewer>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+        
     </Grid>
 </Page>

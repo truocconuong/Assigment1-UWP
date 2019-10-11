@@ -33,7 +33,22 @@ namespace Assigment.Pages
         public Login()
         {
             this.InitializeComponent();
+            try
+            {
+                Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+                Windows.Storage.StorageFile sampleFile = storageFolder.GetFileAsync("sample.txt").GetAwaiter().GetResult();
+                var token = Windows.Storage.FileIO.ReadTextAsync(sampleFile).GetAwaiter().GetResult();
+
+            }
+            catch (Exception e)
+            {
+               
+
+            
+            }
+
         }
+
 
         private void Button_Login(object sender, RoutedEventArgs e)
         {
@@ -49,13 +64,10 @@ namespace Assigment.Pages
             String responseContent = httpRequestMessage.Result.Content.ReadAsStringAsync().Result;
             JObject jsonJObject = JObject.Parse(responseContent);
             Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-
             Windows.Storage.StorageFile sampleFile = storageFolder.CreateFileAsync("sample.txt",
                 Windows.Storage.CreationCollisionOption.ReplaceExisting).GetAwaiter().GetResult();
-
             Windows.Storage.FileIO.WriteTextAsync(sampleFile, jsonJObject["token"].ToString()).GetAwaiter().GetResult();
-            Debug.WriteLine(sampleFile.Path);
-
+            
         }
     }
 

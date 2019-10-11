@@ -17,10 +17,10 @@
                             Margin="10 10"/>
                 <HyperlinkButton x:ConnectionId='4' Tag="Register"                           >Register</HyperlinkButton>
                 <HyperlinkButton x:ConnectionId='5' Tag="Login"                           >Login</HyperlinkButton>
-                <HyperlinkButton x:ConnectionId='6' Tag="Information"                           >My Information</HyperlinkButton>
-                <HyperlinkButton x:ConnectionId='7' Tag="allplaylist"                           >Play list</HyperlinkButton>
-                <HyperlinkButton x:ConnectionId='8' Tag="upload"                           >Upload File</HyperlinkButton>
-                <HyperlinkButton x:ConnectionId='9' Tag="post"                           >PostSong</HyperlinkButton>
+                <HyperlinkButton x:ConnectionId='6' Tag="allplaylist"                           >Play list</HyperlinkButton>
+                <HyperlinkButton x:ConnectionId='7' Tag="upload"                           >Upload File</HyperlinkButton>
+                <HyperlinkButton x:ConnectionId='8' Tag="post"                           >PostSong</HyperlinkButton>
+                <HyperlinkButton x:ConnectionId='9' Tag="listToMe"                           >List To Me</HyperlinkButton>
             </StackPanel>
         </SplitView.Pane>
         <SplitView.Content>

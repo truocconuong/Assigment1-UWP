@@ -9,32 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <ScrollViewer Margin="20">
-        <StackPanel Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top">
-            
-            <TextBlock>firstname</TextBlock>
-            <TextBox x:Name="firstName"></TextBox>
-            <TextBlock>lastname</TextBlock>
-            <TextBox x:Name="lastname"></TextBox>
-            <TextBlock>avatar</TextBlock>
-            <TextBox x:Name="avatar"></TextBox>
-            <TextBlock>phone</TextBlock>
-            <TextBox x:Name="phone"></TextBox>
-            <TextBlock>address</TextBlock>
-            <TextBox x:Name="address"></TextBox>
-            <TextBlock>introduction</TextBlock>
-            <TextBox x:Name="introduction"></TextBox>
-         
-            <TextBlock>gender</TextBlock>
-            <TextBox x:Name="gender"></TextBox>
-           
-            <DatePicker>birthday</DatePicker>
-            <TextBox x:Name="birthday"></TextBox>
-            <TextBlock>Username</TextBlock>
-            <TextBox x:Name="Username"></TextBox>
-            <TextBlock>Password</TextBlock>
-            <PasswordBox x:Name="Password"></PasswordBox>
-            
-            <Button Click="ButtonBase_OnClick">Register</Button>
+        <StackPanel>
+            <TextBlock Text="New Customer" Style="{StaticResource TitleTextBlockStyle}"/>
+            <TextBox x:Name="avatar" Header= "Avatar" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+            <TextBox x:Name="firstName" Header= "First name" Margin="0,24,0,0" MaxLength="32" Width="400" HorizontalAlignment="Left" InputScope="PersonalFullName"/>
+            <TextBox x:Name="lastname" Header="Last name" Margin="0,24,0,0" MaxLength="15" Width="400" HorizontalAlignment="Left" InputScope="TelephoneNumber" />
+            <TextBox x:Name="phone" Header="Phone" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <TextBox x:Name="address" Header="Address" PlaceholderText="Address" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <TextBox x:Name="introduction" Header="introduction" Margin="0,24,0,0" PlaceholderText="Address 2" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <TextBox x:Name="Username" Header="Username" PlaceholderText="Username" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <PasswordBox x:Name="Password" Header="Password" PlaceholderText="Password" Margin="0,24,0,0" MaxLength="50" Width="400" HorizontalAlignment="Left" InputScope="EmailNameOrAddress" />
+            <StackPanel Orientation="Horizontal">
+                <Button Click="ButtonBase_OnClick" Content="Save" Margin="0,24" />
+            </StackPanel>
         </StackPanel>
     </ScrollViewer>
 </Page>

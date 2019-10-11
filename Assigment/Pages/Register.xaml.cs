@@ -28,6 +28,7 @@ namespace Assigment.Pages
     /// </summary>
     public sealed partial class Register : Page
     {
+
         private const string ApiUrl = "https://2-dot-backup-server-003.appspot.com/_api/v2/members";
         public Register()
         {
@@ -39,7 +40,6 @@ namespace Assigment.Pages
             {
                 firstName = this.firstName.Text,
                 lastName = this.lastname.Text,
-                avatar = this.avatar.Text,
                 phone = this.phone.Text,
                 address = this.address.Text,
                 introduction = this.introduction.Text,
@@ -57,5 +57,6 @@ namespace Assigment.Pages
 
 
         }
+
     }
 }

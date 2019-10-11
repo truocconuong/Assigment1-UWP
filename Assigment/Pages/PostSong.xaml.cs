@@ -29,10 +29,12 @@ namespace Assigment.Pages
     /// </summary>
     public sealed partial class PostSong : Page
     {
-        private const string ApiUrl = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs/post-free";
+        private const string ApiUrl = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs";
         public PostSong()
         {
             this.InitializeComponent();
+
+
         }
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
@@ -75,7 +77,12 @@ namespace Assigment.Pages
                     thumbnail = this.thumbnail.Text,
                     link = this.link.Text
                 };
+                Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+                Windows.Storage.StorageFile sampleFile = storageFolder.GetFileAsync("sample.txt").GetAwaiter().GetResult();
+                var token = Windows.Storage.FileIO.ReadTextAsync(sampleFile).GetAwaiter().GetResult();
+
                 var httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + token);
                 HttpContent content = new StringContent(JsonConvert.SerializeObject(song), Encoding.UTF8,
                     "application/json");
                 Task<HttpResponseMessage> httpRequestMessage = httpClient.PostAsync(ApiUrl, content);

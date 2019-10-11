@@ -17,10 +17,10 @@
                             Margin="10 10"/>
                 <HyperlinkButton Tag="Register" Click="ButtonBase_OnClick">Register</HyperlinkButton>
                 <HyperlinkButton Tag="Login" Click="ButtonBase_OnClick">Login</HyperlinkButton>
-                <HyperlinkButton Tag="Information" Click="ButtonBase_OnClick">My Information</HyperlinkButton>
                 <HyperlinkButton Tag="allplaylist" Click="ButtonBase_OnClick">Play list</HyperlinkButton>
                 <HyperlinkButton Tag="upload" Click="ButtonBase_OnClick">Upload File</HyperlinkButton>
                 <HyperlinkButton Tag="post" Click="ButtonBase_OnClick">PostSong</HyperlinkButton>
+                <HyperlinkButton Tag="listToMe" Click="ButtonBase_OnClick">List To Me</HyperlinkButton>
             </StackPanel>
         </SplitView.Pane>
         <SplitView.Content>

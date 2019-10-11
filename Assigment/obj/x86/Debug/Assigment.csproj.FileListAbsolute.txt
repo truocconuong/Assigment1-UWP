@@ -82,3 +82,8 @@ C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\WriteableBitmapEx.
 C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\WriteableBitmapEx.WinRT.pdb
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\WinUX.UWP.pri.xml
 C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636063020760000000.json
+C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\ListToMe.xbf
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\ListToMe.g.i.cs
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\ListToMe.g.cs
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\ListToMe.xaml
+C:\Users\84985\source\repos\Assigment\Assigment\obj\x86\Debug\Pages\ListToMe.xbf

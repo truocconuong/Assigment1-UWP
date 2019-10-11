@@ -8,15 +8,33 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <ScrollViewer>
-            <StackPanel>
-                <TextBlock>Email</TextBlock>
-                <TextBox x:Name="Email"></TextBox>
-                <TextBlock>Password</TextBlock>
-                <PasswordBox x:Name="Password"></PasswordBox>
-                <Button Click="Button_Login">Login</Button>
-            </StackPanel>
-        </ScrollViewer>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Login" FontSize="36" Margin="4" TextAlignment="Center"/>
+            <TextBlock x:Name="ErrorMessage" Text="" FontSize="20" Margin="4" Foreground="Red" TextAlignment="Center"/>
+            <TextBlock Text="Enter your username below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBox x:Name="Email" Margin="4" Width="250"/>
+            <TextBlock Text="Enter your password below" Margin="0,0,0,20"
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <PasswordBox x:Name="Password" Margin="4" Width="250"/>
+
+            <Button x:Name="PassportSignInButton" Content="Login" Background="DodgerBlue" Foreground="White"
+        Width="80" HorizontalAlignment="Center" Margin="0,20" Click="Button_Login"/>
+            <TextBlock Text="Don't have an account?"
+                TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="RegisterButtonTextBlock" Text="Register now"
+             
+               Foreground="DodgerBlue"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <Border x:Name="PassportStatus" Background="#22B14C"
+               Margin="0,20" Height="100" >
+                <TextBlock x:Name="PassportStatusText" Text="Mp5.Zing Nghe Nhạc Thả Ga Thứ 3 Là Chủ Nhật"
+             Margin="4" TextAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            </Border>
+           
+        </StackPanel>
     </Grid>
 </Page>

@@ -97,6 +97,9 @@
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\Information.xbf">
       <PackagePath>Pages\Information.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\ListToMe.xbf">
+      <PackagePath>Pages\ListToMe.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\84985\source\repos\Assigment\Assigment\bin\x86\Debug\Pages\Login.xbf">
       <PackagePath>Pages\Login.xbf</PackagePath>
     </AppxPackagedFile>

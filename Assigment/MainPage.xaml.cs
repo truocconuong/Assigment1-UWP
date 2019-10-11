@@ -40,9 +40,7 @@ namespace Assigment
                     case "Register":
                         this.MainContent.Navigate(typeof(Register));
                         break;
-                    case "Information":
-                        this.MainContent.Navigate(typeof(Information));
-                        break;
+                   
                     case "allplaylist":
                         this.MainContent.Navigate(typeof(AllPost));
                         break;
@@ -51,6 +49,9 @@ namespace Assigment
                         break;
                     case "post":
                         this.MainContent.Navigate(typeof(PostSong));
+                        break;
+                    case "listToMe":
+                        this.MainContent.Navigate(typeof(ListToMe));
                         break;
                 }
             };

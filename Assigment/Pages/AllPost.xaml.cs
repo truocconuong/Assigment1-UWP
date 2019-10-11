@@ -43,19 +43,26 @@ namespace Assigment.Pages
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Add("Authorization", "Basic " + token);
             var responseContent = client.GetAsync(API_ALL_SONG).Result.Content.ReadAsStringAsync().Result;
+            Debug.WriteLine(responseContent);
             var convertSongs = JsonConvert.DeserializeObject<List<Song>>(responseContent);
             ls1.ItemsSource = convertSongs;
+        }
+        private void clickListview(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine(this.ls1);
         }
         private void Start_Song(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
             mediaPlayer = new MediaPlayer();
             mediaPlayer.Source = MediaSource.CreateFromUri(new Uri($"{button.Tag}", UriKind.RelativeOrAbsolute));
+            mediaPlayer.Pause();
             mediaPlayer.Play();
         }
         private void Stop_Song(object sender, RoutedEventArgs e)
         {
             mediaPlayer.Pause();
         }
+      
     }
 }
